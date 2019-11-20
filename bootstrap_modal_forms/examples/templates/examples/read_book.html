@@ -1,0 +1,47 @@
+{% load widget_tweaks %}
+
+<div class="modal-header" style="background-color: #0066CC;">
+  <h3 class="modal-title" style="color: white">Complaint details</h3>
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+<div class="modal-body">
+  
+  <div class="">
+    <b>Room Number:</b>
+    {{ book.room_Number }}
+    <hr>
+  </div>
+  <div class="">
+    <b>Office Title:</b>
+    {{ book.office_Title }}
+    <hr>
+  </div>
+  <div class="">
+    <b>Complaint:</b>
+    {{ book.complaint }}
+    <hr>
+  </div>
+  <div class="">
+    <b>Additional Info:</b>
+    {{ book.additional_Info }}
+    <hr>
+  </div>
+  <div class="">
+    <b>Solution:</b>
+    {{ book.solution }}
+    <hr>
+  </div>
+  <div class="">
+    <b>Occurance:</b>
+    {{ book.occurance }}
+    <hr>
+  </div>
+
+</div>
+
+<div class="modal-footer">
+  <button type="button" class="btn btn-default" data-dismiss="modal"style="color: #0066CC;">Close</button>
+</div>
